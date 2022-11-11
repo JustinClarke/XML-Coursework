@@ -10,6 +10,7 @@
         <th><b>Probability</b></th>
     </tr>
     {
+        let $has_succ_tuple := for $s in collection('resources?select=*.xml')//s
         return   
             for $w in $s/w
             return
